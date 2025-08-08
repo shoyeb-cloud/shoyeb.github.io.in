@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rungta College</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f6f8;
+    }
+
+    .about-section {
+      padding: 60px 20px;
+      background-color: #ffffff;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .about-title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .about-title h2 {
+      font-size: 36px;
+      color: #2c3e50;
+    }
+
+    .about-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .about-text, .about-image {
+      flex: 1;
+      min-width: 300px;
+      padding: 20px;
+    }
+
+    .about-text p {
+      font-size: 16px;
+      line-height: 1.8;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .about-image img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .mission-vision-values {
+      background-color: #f9fbfd;
+      padding: 30px 20px;
+      border-radius: 10px;
+      margin-top: 40px;
+    }
+
+    .mission-vision-values h3 {
+      color: #0077cc;
+      margin-bottom: 10px;
+    }
+
+    .mission-vision-values p {
+      color: #333;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    .achievements {
+      background-color: #eaf4fc;
+      padding: 30px 20px;
+      border-radius: 10px;
+      margin-top: 30px;
+    }
+
+    .achievements h3 {
+      color: #0077cc;
+      margin-bottom: 10px;
+    }
+
+    .achievements ul {
+      list-style-type: square;
+      padding-left: 20px;
+      color: #333;
+    }
+
+    @media (max-width: 768px) {
+      .about-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .about-text, .about-image {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <img   src="https://www.rungtacolleges.com/logo.png" alt="College Logo" class="logo" />
+      <nav>
+        <ul id="nav-links">
+          <li><a href="shoyebWeb.html">Home</a></li>
+          <li><a href="Sabout.html">About</a></li>
+          <li><a href="Sdept.html">Departments</a></li>
+          <li><a href="Saddmision.html">Admission</a></li>
+          <li><a href="Snews.html">News</a></li>
+          <li><a href="Scontact.html">Contact</a></li>
+        </ul>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+      </nav>
+    </div>
+  </header>
+
+ 
+  <section class="about-section">
+    <div class="about-title">
+      <h2>About Our College</h2>
+    </div>
+
+    <div class="about-container">
+      <div class="about-text">
+        <p>
+          Welcome to Rungta College of Excellence – a pioneer in higher education, research, and innovation. Founded in the year 2000, the college has continually evolved into one of the most prestigious institutions in the region.
+        </p>
+        <p>
+          Our institution offers a wide variety of undergraduate and postgraduate programs in Engineering, Management, Computer Applications, and Commerce. With a dedicated faculty and state-of-the-art infrastructure, we provide a dynamic learning environment to shape the future leaders of tomorrow.
+        </p>
+        <p>
+          We believe in fostering a culture of excellence, discipline, and innovation while also encouraging holistic development in academics, sports, arts, and community engagement.
+        </p>
+      </div>
+      <div class="about-image">
+        <img src="images/banner3-rungta1.jpg" alt="College Campus">
+      </div>
+    </div>
+
+    <div class="mission-vision-values">
+      <h3>Our Mission</h3>
+      <p>
+        To provide a transformative education that nurtures creativity, critical thinking, and ethical values, preparing students to thrive in a rapidly evolving global society.
+      </p>
+
+      <h3>Our Vision</h3>
+      <p>
+        To be recognized globally as a center of academic excellence, research, and innovation, shaping the future through knowledge and empowerment.
+      </p>
+
+      <h3>Our Core Values</h3>
+      <p>
+        Excellence, Integrity, Innovation, Inclusiveness, and Social Responsibility.
+      </p>
+    </div>
+
+    <div class="achievements">
+      <h3>Key Achievements</h3>
+      <ul>
+        <li>Accredited with NAAC ‘A+’ Grade</li>
+        <li>Over 300+ campus placements every year</li>
+        <li>ISO 9001:2015 Certified Institution</li>
+        <li>Highly qualified faculty with industry and research expertise</li>
+        <li>Modern labs, smart classrooms, and innovation hubs</li>
+        <li>National-level sports and cultural achievements</li>
+      </ul>
+    </div>
+  </section>
+  
+
+  <section id="departments" class="section light-bg">
+    <h2>Departments</h2>
+    <div class="card-container">
+      <div class="card"><a href="https://www.computerscience.org/">Computer Science</a></div>
+      <div class="card"><a href="https://www.electrical4u.com/">Electronics</a></div>
+      <div class="card"><a href="https://www.aboutmech.com/">Mechanical</a></div>
+      <div class="card"><a href="https://www.engineeringcivil.com/">Civil</a></div>
+      <div class="card"><a href="https://www.classter.com/product/modules/college/">Management</a></div>
+    </div>
+  </section>
+
+  
+
+  <footer>
+    <p>&copy; 2025 Rungta College. All rights reserved.</p>
+    <div class="socials">
+      <a href="https://www.facebook.com/rungtacolleges">Facebook</a> |
+      <a href="https://www.instagram.com/sanjayrungtacolleges/">Instagram</a> |
+      <a href="https://x.com/RungtaGroup">X</a>
+    </div>
+  </footer>
+
+</body>
+</html>

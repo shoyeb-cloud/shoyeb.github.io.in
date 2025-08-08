@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rungta College</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <img   src="https://www.rungtacolleges.com/logo.png" alt="College Logo" class="logo" />
+      <nav>
+        <ul id="nav-links">
+          <li><a href="shoyebWeb.html">Home</a></li>
+          <li><a href="Sabout.html">About</a></li>
+          <li><a href="Sdept.html">Departments</a></li>
+          <li><a href="Saddmision.html">Admission</a></li>
+          <li><a href="Snews.html">News</a></li>
+          <li><a href="Scontact.html">Contact</a></li>
+        </ul>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+      </nav>
+    </div>
+  </header>
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Rungta College</h1>
+      <p>Shaping the Future through Knowledge and Innovation</p>
+    </div>
+  </section>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f4f8;
+    }
+
+    .news-section {
+      max-width: 1200px;
+      margin: 60px auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .news-title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .news-title h2 {
+      font-size: 32px;
+      color: #2c3e50;
+    }
+
+    .news-cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-between;
+    }
+
+    .news-card {
+      background-color: #f9fbfd;
+      border-left: 5px solid #0077cc;
+      padding: 20px;
+      border-radius: 8px;
+      flex: 1 1 30%;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      transition: transform 0.2s ease;
+    }
+
+    .news-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .news-card h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: #0077cc;
+    }
+
+    .news-card p {
+      font-size: 14px;
+      color: #555;
+    }
+
+    .news-card .date {
+      font-size: 12px;
+      color: #888;
+      margin-top: 10px;
+      display: block;
+    }
+
+    @media (max-width: 768px) {
+      .news-cards {
+        flex-direction: column;
+      }
+
+      .news-card {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="news-section">
+    <div class="news-title">
+      <h2>Latest College News & Updates</h2>
+    </div>
+
+    <div class="news-cards">
+      <div class="news-card">
+        <h3>Admissions Open for 2025</h3>
+        <p>
+          Applications are now open for undergraduate and postgraduate programs for the academic year 2025-26.
+        </p>
+        <span class="date">Published on: August 1, 2025</span>
+      </div>
+
+      <div class="news-card">
+        <h3>Campus Recruitment Drive</h3>
+        <p>
+          Top companies like Infosys, TCS, and Wipro are visiting for placement drives in September. Register now!
+        </p>
+        <span class="date">Published on: July 27, 2025</span>
+      </div>
+
+      <div class="news-card">
+        <h3>Annual Tech Fest - InnovateX</h3>
+        <p>
+          Join us for InnovateX 2025 with hackathons, workshops, and expert talks. Open for all branches!
+        </p>
+        <span class="date">Published on: July 20, 2025</span>
+      </div>
+
+    
+    </div>
+  </section>
+<footer>
+    <p>&copy; 2025 Rungta College. All rights reserved.</p>
+    <div class="socials">
+      <a href="https://www.facebook.com/rungtacolleges">Facebook</a> |
+      <a href="https://www.instagram.com/sanjayrungtacolleges/">Instagram</a> |
+      <a href="https://x.com/RungtaGroup">X</a>
+    </div>
+  </footer>
+
+
+</body>
+</html>
